@@ -83,7 +83,8 @@ export default class YouTubeCommand extends AbstractCommandModule
             regionCode: config.getOrElse("regionCode", "US"),
             order: config.getOrElse("order", "relevance"),
             safeSearch: config.getOrElse("safeSearch", "moderate"),
-            maxResults: 1 // we are only posting 1 video to the chat
+            maxResults: 1, // we are only posting 1 video to the chat
+            type: "video"
         }
     }
 
